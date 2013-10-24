@@ -2,12 +2,10 @@
 function my_strpos($haystack, $needle, $offset=0)
 {
   // Normalize input
-  $haystack = strtolower($haystack);
   if (gettype($needle) == "integer")
     $needle = chr($needle);
   elseif (gettype($needle) != "string")
     return false;
-  $needle = strtolower($needle);
 
   // Parse
   $start = strlen($haystack) - strlen($needle);
