@@ -5,10 +5,9 @@ function my_strpos($haystack, $needle, $offset=0)
   $haystack = strtolower($haystack);
   if (gettype($needle) == "integer")
     $needle = chr($needle);
-  elseif (gettype($needle) == "string")
-    $needle = strtolower($needle);
-  else
+  elseif (gettype($needle) != "string")
     return false;
+  $needle = strtolower($needle);
 
   // Parse
   $start = strlen($haystack) - strlen($needle);
