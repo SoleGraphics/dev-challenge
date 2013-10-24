@@ -18,7 +18,9 @@
         padding: 5px;
         width: 560px;
 
-        box-shadow: -1px -1px 5px #AAA;
+        -webkit-box-shadow: -1px -1px 5px #AAA; /* for Chrome + Safari */
+        -moz-box-shadow: -1px -1px 5px #AAA; /* for Firefox */
+        box-shadow: -1px -1px 5px #AAA; /* for Opera 10.5, IE9 */
 
         /* For floating childen */
         overflow: hidden;
