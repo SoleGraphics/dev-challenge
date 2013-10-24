@@ -1,8 +1,23 @@
 <?php
-
-function my_strpos(/* arguments go here! */)
+function my_strpos($haystack, $needle, $offset=0)
 {
-	# Your code goes here!
+  // Normalize input
+  $haystack = strtolower($haystack);
+  if (gettype($needle) == "integer")
+    $needle = chr($needle);
+  elseif (gettype($needle) == "string")
+    $needle = strtolower($needle);
+  else
+    return false;
+
+  // Parse
+  $start = strlen($haystack) - strlen($needle);
+  for ($i=$start; $i>=$offset; $i--) {
+    // If this is 'cheating' let me know and I'll make a better one xD
+    if (substr($haystack, $i, strlen($needle)) == $needle)
+      return $i;
+  }
+  return false;
 }
 
 $alphabet = 'abcdefghijklmnopqrstuvwxyz';
