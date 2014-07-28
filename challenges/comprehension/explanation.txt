@@ -1,0 +1,13 @@
+
+@ defines an array or list or something of that nature
+
+% defines a variable
+
+$ defines an array or something
+
+The while loop takes a line from a text file and splits it by " " into an array.
+Then the for each takes a chunk from that array and checks if it matches some string or regexp ( I have never used regexp's). If a match exists it then puts the chunk into an array or stack called storage. If a match does not exist it just shoves it into the second slot in the array assuming it starts at 0.
+
+The for each at the bottom prints the index and chunk from the array in storage with some pretty printing.
+
+
