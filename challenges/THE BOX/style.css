@@ -1,0 +1,56 @@
+div {
+	position: absolute;
+}
+
+#orange {
+	background-color: #F1AB3c;
+	width: 400px;
+	height: 400px;
+	left: 160px;
+	top: 10px;
+}
+
+#dark_green {
+	background-color: #68884b;
+	width: 140px;
+	height: 190px;
+	top: 10px;
+}
+
+#light_green {
+	background-color: #7fBB4d;
+	width: 140px;
+	height: 190px;
+	top: 220px;
+}
+
+#dark_blue {
+	background-color: #2669A4;
+	width: 290px;
+	height: 90px;
+	top: 420px;
+}
+
+#medium_dark_blue {
+	background-color: #4994DC;
+	width: 90px;
+	height: 90px;
+	left: 310px;
+	top: 420px;
+}
+
+#medium_light_blue {
+	background-color: #87BFF4;
+	width: 150px;
+	height: 40px;
+	top: 420px;
+	left: 410px;
+}
+
+#light_blue {
+	background-color: #B6DBFE;
+	width: 150px;
+	height: 40px;
+	top: 470px;
+	left: 410px;
+}
