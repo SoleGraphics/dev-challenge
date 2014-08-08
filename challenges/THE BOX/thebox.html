@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The Box</title>
+		<style type="text/css">
+			#container {
+				width: 630px;
+				height: 574px;
+				padding-left: 30px;
+				padding-top: 27px;
+			}
+
+			#thebox {
+				width: 550px;
+				height: 500px;
+				padding: 10px;
+				box-shadow: 0 0 2px 2px #CCC;
+				-moz-box-shadow: 0 0 2px 2px #CCC;
+				-webkit-box-shadow: 0 0 2px 2px #CCC;
+				-moz-border-radius: 1px;
+				-webkit-border-radius: 1px;
+				-khtml-border-radius: 1px;
+				border-radius: 1px;
+			}
+
+			#leftspan1 {
+				width: 140px;
+				height: 402px;
+				float: left;
+			}
+
+			#leftspan1 > .darkgreen {
+				width: 100%;
+				height: 195px;
+				background-color: #68884B;
+			}
+
+			#leftspan1 > .lightgreen {
+				width: 100%;
+				height: 195px;
+				margin-top: 10px;
+				background-color: #81BB4D;
+			}
+
+			#rightspan1 {
+				width: 400px;
+				height: 400px;
+				float: right;
+				background-color: #F1AB3C;
+			}
+
+			#bottomspan {
+				margin-top: 8px;
+				width: 100%;
+				height: 90px;
+				float: left;
+			}
+
+			#bottomspan > .darkblue {
+				width: 290px;
+				height: 90px;
+				float: left;
+				background-color: #2669A8;
+			}
+
+			#bottomspan > .lightblue {
+				width: 90px;
+				height: 90px;
+				margin-left: 10px;
+				float: left;
+				background-color: #4794DC;
+			}
+
+			#bottomspan > #rightspan2 {
+				width: 150px;
+				height: 90px;
+				float: right;
+			}
+
+			#bottomspan > #rightspan2 > .darkblue {
+				width: 100%;
+				height: 40px;
+				margin-bottom: 10px;
+				background-color: #87BFF4;
+			}
+				
+			#bottomspan > #rightspan2 > .lightblue {
+				width: 100%;
+				height: 40px;
+				background-color: #B6DBFE;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div id="thebox">
+				<div id="leftspan1">
+					<div class="darkgreen"></div>
+					<div class="lightgreen"></div>
+				</div>
+				<div id="rightspan1"></div>
+				<div style="clear: both"></div>
+				<div id="bottomspan">
+					<div class="darkblue"></div>
+					<div class="lightblue"></div>
+					<div id="rightspan2">
+						<div class="darkblue"></div>
+						<div class="lightblue"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

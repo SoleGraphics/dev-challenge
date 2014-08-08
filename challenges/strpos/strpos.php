@@ -1,8 +1,25 @@
 <?php
 
-function my_strpos(/* arguments go here! */)
+function my_strpos($haystack, $needle, $offset = 0)
 {
-	# Your code goes here!
+	if ($offset < 0) {
+		$backtrace = debug_backtrace();
+		echo "PHP Warning: my_strpos(): Offset not contained in string in " .
+			$backtrace[0]["file"] . " on line " . $backtrace[0]["line"] . "\n";
+		return -1;
+	}
+	$haystack = substr($haystack, $offset);
+	if (!is_string($needle)) {
+		$needle = chr((int)($needle));
+	}
+
+	preg_match('/' . $needle . '/', $haystack, $matches, PREG_OFFSET_CAPTURE);
+	if ($matches) {
+		return $matches[0][1];
+	}
+	else {
+		return false;
+	}
 }
 
 $alphabet = 'abcdefghijklmnopqrstuvwxyz';
