@@ -10,8 +10,8 @@ Inside this loop it checks to see if the word is composed of one or more alphanu
 
 If so, it checks to see if the word is a key in @storage. If so, it increments the integer that the key %t maps to. If not, it initializes an integer in @storage to 1, with %t being its key.
 
-After the program has reached an EOF, it iterates over all the key-value pairs in @storage, and prints them ("key value").
+After the program has reached an EOF (I'm assuming at least), it iterates over all the key-value pairs in @storage, and prints them ("key value").
 
 In summary, the program reads a text file, calculates the frequency of every word, and then prints out each word and its corresponding frequency.
 
-Note: The @ sigil refers to a hash/dict/map. The $ sigil refers to an array. The % sigil refers to a scalar (in this case, strings).
+Note: The @ sigil refers to a hash/dict/map. The $ sigil refers to an array. The % sigil refers to a scalar (in this case, strings). 
