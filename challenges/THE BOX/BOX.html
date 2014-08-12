@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>The... BOX</title>
+
+    <!-- CSS Reset, for xbrowser compatibility -->
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.13.0/build/cssreset/cssreset-min.css" />
+
+    <style type="text/css">
+      #container { 
+        /* Center the box */
+        margin-top: 27px;
+        margin-left: auto;
+        margin-right: auto;
+
+        /* dimensions */
+        padding: 5px;
+        width: 560px;
+
+        -webkit-box-shadow: -1px -1px 5px #AAA; /* for Chrome + Safari */
+        -moz-box-shadow: -1px -1px 5px #AAA; /* for Firefox */
+        box-shadow: -1px -1px 5px #AAA; /* for Opera 10.5, IE9 */
+
+        /* For floating childen */
+        overflow: hidden;
+      }
+
+      .box {
+        float: left;
+        margin: 5px;
+      }
+
+      .leftnav { 
+        width: 150px;
+        float: left;
+      }
+
+        #darkgreen { 
+          background-color: #688848;
+          height: 195px;
+          width: 140px;
+        }
+
+        #lightgreen {
+          background-color: #81BB4D;
+          height: 195px;
+          width: 140px;
+        }
+      
+      .rightnav { 
+        float: right;
+        width: 410px;
+      }
+
+        #orange { 
+          background-color: #F1AB3C;
+          height: 400px;
+          width: 400px;
+        }
+
+
+      .bottomnav { 
+        width: 560px;
+      }
+
+        #navyblue { 
+          background-color: #2669A8;
+          width: 290px;
+          height: 90px;
+        }
+        #azure { 
+          background-color: #4794DC;
+          width: 90px;
+          height: 90px;
+        }
+
+
+        .botstack { 
+          float: right; 
+          width: 160px;
+        }
+
+          #skyblue { 
+            background-color: #87BFF4;
+            width: 150px;
+            height: 40px;
+          }
+          #aqua { 
+            background-color: #B6DBFE;
+            width: 150px;
+            height: 40px;
+          }
+
+    </style>
+  </head>
+  <body>
+    <div id="container">
+
+      <div class="leftnav">
+        <div class="box" id="darkgreen"></div>
+        <div class="box" id="lightgreen"></div>
+      </div>
+
+      <div class="rightnav">
+        <div class="box" id="orange"></div>
+      </div>
+
+      <div class="bottomnav">
+        <div class="box" id="navyblue"></div>
+        <div class="box" id="azure"></div>
+
+        <div class="botstack">
+          <div class="box" id="skyblue"></div>
+          <div class="box" id="aqua"></div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

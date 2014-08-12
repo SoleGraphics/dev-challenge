@@ -1,0 +1,27 @@
+  This basic script will search through an input file "input.txt", and print out each unique "word" containing at least one alphanumeric value (letters or numbers), along with the number of times that word was encountered.
+
+
+  The breakdown: 
+@storage is an initially unpopulated dictionary/associative array.
+
+%temp holds a buffer of characters, retrieved from "input.txt".
+
+$temp is an array holding each "word" in the string (meaning, anything delimited by a space).
+
+%t is a temporary variable representing each word.
+
+%t.match(/[A-Za-z0-9]+/) is a regex. It returns any matches where the word has alphanumeric values. 
+I'm assuming here that the forwardslashes are a convention to denote the start and end of a regex expression.
+
+The next five lines searches the @storage dictionary. If @storage has a key equivalent to %t, it increments the value. Otherwise sets that value to 1.
+      
+The foreach in @storage prints out a line for each key/value representing each word and the number of times it was encountered in "input.txt"
+
+  Language Syntax:
+@ are associative arrays
+% are strings, or non-array variables
+$ are arrays
+
+
+  One thing I'd like to note is that %t isn't modified by the regex; the regex only confirms that the word contains an alphanumeric. Therefore, you will see non-alphanumeric words in the output of this script, such as "@mileycyrus", or "_,.-='`a`'=-.,_". 
+  It might be worth doublechecking if the client was looking for a script that printed only english words and their frequency.
