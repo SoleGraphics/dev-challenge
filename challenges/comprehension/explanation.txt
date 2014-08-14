@@ -1,0 +1,9 @@
+main.wat is a Perl-esque script that reads a text file and counts the instances of particular "words" (where a word is any sequence of non-space characters containing at least one alphanumeric delimited by spaces).
+
+Inside the main() function, the first step is to declare a hash called @storage. Then the program reads input.txt (a file assumed to be in the current folder) line by line until getline returns a false value indicating end-of-file. The current line is sucked into a string (scalar) variable called %temp, then split on the space character into an array of "words" called $temp.
+
+Each word in $temp is compared to a regular expression representing a sequence of alphanumeric characters (one or more); if it doesn't match, it's discarded. If it does match, the final check is to see if there's a matching key in the hash @storage already; if so, the value at that key is incremented by one; if not, it is set to 1. The final result would be a hash with keys for each word in the document and a value representing the number of appearances of each word.
+
+Finally the program prints a line for each word that looks like "<word> <count>"
+
+Variables are represented as follows: %scalar @hash $array (basically a rearranged version of Perl's variable syntax).
