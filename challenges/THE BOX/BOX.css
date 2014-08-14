@@ -1,0 +1,93 @@
+body {
+	margin-right: auto;
+	margin-left: auto;
+	width: 95%;
+	max-width: 630px;
+	height: 574px;
+	line-height: 0px;
+}
+
+div {
+	width: 100%;
+	height: 100%;
+	margin: 5px;
+	display: inline-block;
+}
+
+#main-content {
+	width: 89%;
+	height: 89%;
+	max-width: 560px;
+	max-height: 510px;
+	padding: 5px;
+	margin: 30px 27px 30px 27px;
+	box-shadow: 0px 0px 6px 0px gray;
+}
+
+.object {
+	margin: 0px;
+	padding: 0px;
+}
+
+#left {
+	max-width: 140px;
+	max-height: 400px;
+}
+
+#right {
+	max-width: 400px;
+	max-height: 400px;
+}
+
+#footer {
+	max-height: 90px;
+	max-width: 550px;
+}
+
+#footer-stack {
+	margin: 0px;
+	padding: 0px;
+	max-height: 90px;
+	max-width: 150px;
+}
+
+#od-green {
+	background-color: #68884b;
+	height: 50%;
+	max-height: 195px;
+	margin-bottom: 10px;
+}
+
+#lighter-green {
+	background-color: #81bb4d;
+	height: 50%;
+	max-height: 195px;
+}
+
+#ochre {
+	background-color: #f1ab3c;
+}
+
+#steel-blue {
+	background-color: #2669a8;
+	max-width: 290px;
+	margin-right: 10px;
+}
+
+#sky-blue {
+	background-color: #4794dc;
+	max-width: 90px;
+	margin-right: 10px;
+}
+
+#baby-blue {
+	background-color: #87bff4;
+	max-height: 40px;
+	margin-bottom: 10px;
+}
+
+#palest-blue {
+	background-color: #b6dbfe;
+	max-height: 40px;
+}
+
