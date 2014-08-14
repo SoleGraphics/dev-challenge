@@ -10,8 +10,6 @@ body {
 div {
 	width: 100%;
 	height: 100%;
-	margin: 5px;
-	display: inline-block;
 }
 
 #main-content {
@@ -24,43 +22,61 @@ div {
 	box-shadow: 0px 0px 6px 0px gray;
 }
 
-.object {
-	margin: 0px;
-	padding: 0px;
+.container {
+	display: inline-block;
+	margin: 5px;
+}
+
+.main-col {
+	max-height: 400px;
+}
+
+.footer-col {
+	max-height: 90px;
 }
 
 #left {
+	width: 25%;
 	max-width: 140px;
-	max-height: 400px;
 }
 
 #right {
+	width: 71.43%;
 	max-width: 400px;
-	max-height: 400px;
 }
 
-#footer {
-	max-height: 90px;
-	max-width: 550px;
+#footer-col1 {
+	max-width: 290px;
 }
 
-#footer-stack {
-	margin: 0px;
-	padding: 0px;
-	max-height: 90px;
+#footer-col2 {
+	max-width: 90px;
+}
+
+#footer-col3 {
 	max-width: 150px;
+}
+
+#left > div {
+	height: 48.75%;
+	max-height: 195px;
+}
+
+#footer-col3 > div {
+	height: 44.44%;
+	max-height: 40px;
 }
 
 #od-green {
 	background-color: #68884b;
-	height: 50%;
+	height: 48.75%;
 	max-height: 195px;
 	margin-bottom: 10px;
 }
 
 #lighter-green {
 	background-color: #81bb4d;
-	height: 50%;
+	height: 48.75%;
 	max-height: 195px;
 }
 
@@ -70,24 +86,17 @@ div {
 
 #steel-blue {
 	background-color: #2669a8;
-	max-width: 290px;
-	margin-right: 10px;
 }
 
 #sky-blue {
 	background-color: #4794dc;
-	max-width: 90px;
-	margin-right: 10px;
 }
 
 #baby-blue {
 	background-color: #87bff4;
-	max-height: 40px;
 	margin-bottom: 10px;
 }
 
 #palest-blue {
 	background-color: #b6dbfe;
-	max-height: 40px;
 }
-
