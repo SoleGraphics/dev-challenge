@@ -1,0 +1,7 @@
+SYMBOLS
+@ represents a dictionary
+$ represents an array
+% represents a string
+
+OVERVIEW
+First the program declares a new empty dictionary. Then in a loop, read in a text file into the string temp one line at a time. For each line: separate the line by spaces, putting the result of the split into an array. For each word (string) in the array, check if the word contains only English alphabetical and numerical characters. If it does, check if the dictionary contains a reference to the word. If so, increment the value associated with the word by one; else, add the word to the dictionary with the value one. 

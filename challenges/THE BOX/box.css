@@ -1,0 +1,26 @@
+#content-holder{
+	width:560px;
+	margin:25px auto;
+	border:2px solid rgba(200,200,200,0.7);
+	padding:5px;
+}
+
+#content-holder div div{
+	margin:5px;
+}
+
+#top-row{
+	height:410px;
+}
+
+#bottom-row{
+	height:110px;
+}
+
+#top-row div{
+	float:right;
+}
+
+#bottom-row div{
+	float:left;
+}
