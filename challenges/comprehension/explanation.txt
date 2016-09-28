@@ -1,0 +1,7 @@
+I had a blow by blow breakdown but here's the tl:dr version...
+
+This program reads a text file and prints out a list of every alphanumeric character it finds, along with how many times that character appears.
+
+% = variables (strings in this case)
+$ = array (of strings in this case)
+@ = associative array (of string keys and an integer value in this case)
