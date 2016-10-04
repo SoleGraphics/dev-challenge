@@ -1,0 +1,72 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #FFFFFF;
+}
+
+body > div {
+	width: 99vmin;
+	height: 90vmin;
+	margin: 5vmin auto 5vmin auto;
+	padding: 0.5%;
+	background-color: #FFFFFF;
+	box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);   
+}
+
+body > div > div {
+	margin: 1%;
+	display: inline-block;
+}
+
+#box-1 {
+	float: right;
+	width: 70%;
+	height: 79%;
+	background-color: #F1AB3C;
+}
+
+#box-2 {
+	float: left;
+	width: 26%;
+	height: 38.25%;
+	background-color: #68884B;
+}
+
+#box-3 {
+	float: left;
+	width: 26%;
+	height: 38.25%;
+	background-color: #81BB4D;
+}
+
+#box-4 {
+	float: left;
+	width: 50%;
+	height: 17%;
+	background-color: #2669A8;
+}
+
+#box-5 {
+	float: left;
+	width: 17%;
+	height: 17%;
+	background-color: #4794DC;
+}
+
+#box-6 {
+	float: left;
+	width: 27%;
+	height: 7.5%;
+	background-color: #87BFF4;
+}
+
+#box-7 {
+	float: left;
+	width: 27%;
+	height: 7.5%;
+	background-color: #B6DBFE;
+}

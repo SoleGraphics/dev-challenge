@@ -1,8 +1,17 @@
 <?php
 
-function my_strpos(/* arguments go here! */)
+function my_strpos( $haystack , $needle, $offset = 0)
 {
-	# Your code goes here!
+	if( !is_string ( $needle )) $needle = intval($needle);
+		
+	for( $i = $offset; $i < strlen($haystack); $i++ ) {
+		for( $j = 0; $j < strlen($needle); $j++ ) {
+			if( $needle[$j] != $haystack[$i+$j] ) break;
+			if( $j == strlen($needle) - 1 ) return $i;
+		}
+	}
+	
+	return false;
 }
 
 $alphabet = 'abcdefghijklmnopqrstuvwxyz';

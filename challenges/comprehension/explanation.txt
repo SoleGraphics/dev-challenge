@@ -1,0 +1,14 @@
+In this language:
+% represent strings.
+$ represent arrays, string[] in this case.
+@ represents a more complex collection, something like a Dictionary<string, int> in this case.
+
+The program main.wat counts the number of times unique alpha numeric strings appear in the input.txt file, and then prints the result.
+
+It does this by iterating line by line through input.txt, setting %temp equal to the line each iteration.
+It then splits %temp into an array to substrings, split along spaces.
+It then loops through this array of strings and checks if each is alpha numeric. 
+If it is, then it checks the @storage collection to see if the current string has already been found. 
+	If so, it increments the value for that key by one. 
+	If not, it creates a new key for that string and sets the value to 1. 
+After the program has iterated through all the lines to input.txt, it then iterates through all the keys in the @storage collection and prints (presumably to the console) each unique key, followed by a space, followed by the number of times the string appeared in the txt file, followed by a new line.
